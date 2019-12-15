@@ -1,0 +1,14 @@
+greeting	 hi hi. hello how are you ? hey . hows it going good morning good evening good afternoon howdy 
+brand   Arrow Sport . Allen Solly . Arrow . ADIDAS . Aeropostale . Arrow New York . AMERICAN EAGLE . American Crew . Arrow . ASICS . Avengers . Blackberrys . Being Human . Bossini . Barcelona . Celio . Calvin Klein Jeans . Crocs . Polo . Converse . Calvin Klein . Cottonworld . Duke . DC . DC Comics . Donald Duck . Doctor Who . ESPRIT . Ed Hardy . English Navy . Flying Machine . French Connection . FOREVER 21 . FILA . GAP . Globus . GAS . GUESS . G-STAR RAW . Harvard . H&M . Indian Terrain . Jack & Jones . Jockey . Justice League . Joker . Killer . Kappa . Louis Philippe . Lee . Levis . Lee Cooper . Louis Park . Lotto . Monte Carlo . Marks & Spencer . Marvel . Manyavar . NBA . Nike . New Balance . Puma . Parx . Peter England . Park Avenue . Pepe Jeans . Quiksilver . Roadster . Raymond . Red Tape . Reebok . Rolling Stone . SPYKAR . Superdry . Splash . Speedo . Tommy Hilfiger . Timberland . United Colors of Benetton . U.S. Polo Assn . UNDER ARMOUR . UCLA . Umbro . Van Heusen . WROGN . Wrangler . Wildcraft.
+conversation-continue	 ok wow great oh is it ? oh ohh Thats great Good Really hmm lemme think hm hmmm hmmmmm . That's really great!. That sounds amazing . How nice
+price-inquiry	 How much is the cost ? What's the price ? What's the cost ? How much is price? How much it costs ? price cost money how much. how much?
+product-inquiry	 what are the items sold? what are the places offered? items ? products ? what stuff do you sell?  
+conversation-complete	 Thanks done that's all thats it. thats it I am done Thank you for information Thank. thanks. thank you. thanks nothing else thats it. bye . fin . finish
+process-inquiry    How does khoj work ? work . works.
+input-initiate  product recommendation for. I want. search . recommendation for. initiate interaction . initiate . interaction
+contant-input contact information . How can I contact you guys. collaboration. collaborate .
+product-input   T-shirt top  trouser pullover dress coat Sandal shirt bag Ankle boot tshirt shoes sneakers coat hoodie sports watch jewellery cosmetics textile party wear shoe slider floater robe saree jeans pant sweater sweatshirt
+color-input   black . grey . blue .  green . red . white . yellow . orange . pink . violet . brown . Brown . Black . Grey . Blue . Green . Red . White . Yellow . Orange . Pink . Violet . 
+accuracy-input How accurate is the product? about good is khoj? how good is khoj with images.
+about-bot how is the bot is built. chatbot. about the chatbot. how smart is the chatbot?
+about-classifier how is the classifier built? how good is the classifier? how many classes? how many categories?

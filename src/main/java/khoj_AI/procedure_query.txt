@@ -1,0 +1,80 @@
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `Customers_GetCustomer`(IN id INT)
+BEGIN
+       SELECT name ,address ,salary,proj_id
+       FROM employee
+       WHERE emp_id = id;
+END$$
+DELIMITER ;
+
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `perfomance_gen`(IN id INT)
+BEGIN
+      SELECT dis,target,sincere 
+      FROM perfomance_rating
+      WHERE emp_id= id;
+END$$
+DELIMITER ;
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `Customers_GetCustomer`(IN custId INT)
+BEGIN
+       SELECT Name
+              ,Country
+       FROM Customers
+       WHERE CustomerId = custId;
+END$$
+DELIMITER ;
+call Customers_GetCustomer(100)
+
+create table perfomance_rating
+(
+emp_id int primary key,
+dis int,
+target int,
+sincere int
+);
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` FUNCTION `Generate_Index`(IN custId INT) RETURNS int
+BEGIN
+      declare d int;
+      declare sum int;
+      SELECT dis INTO d
+      FROM perfomance_rating
+      WHERE emp_id= custId;
+      sum:= d;
+      return sum;
+END$$
+DELIMITER ;
+
+SELECT dis,target,sincere 
+      FROM perfomance_rating
+      WHERE emp_id= custId;
+
+delimiter //
+create procedure get_investment()
+begin
+declare id int default 0;
+declare name varchar(25) default "";
+declare dur int default 0;
+DECLARE done INT DEFAULT FALSE;
+declare tuple_o_i cursor for
+select * from projects where proj_duration > 40 and proj_id not in(select proj_id from investment);
+DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+open tuple_o_i;
+get_list: LOOP
+FETCH tuple_o_i into id, name, dur;
+IF done THEN
+      LEAVE get_list;
+end if;
+IF dur>49 then
+insert into investment values(null,id);
+end if;
+end loop;
+close tuple_o_i;
+end//
+delimiter ;
+
+

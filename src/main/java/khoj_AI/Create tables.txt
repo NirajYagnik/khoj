@@ -1,0 +1,15 @@
+create table login(
+username varchar(50),
+email varchar(50),
+password varchar(30),
+foreign key(username) references register(username));
+
+create table register(
+name varchar(50),
+email varchar(50),
+username varchar(50),
+password varchar(30),
+age int,
+phone varchar(25),
+address varchar(100),
+primary key(username));
